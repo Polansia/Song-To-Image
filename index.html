@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Song To Image</title>
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+  
+  <link rel="stylesheet" href="https://unpkg.com/boba@1/dist/boba-extended.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./js/search.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.16/clipboard.min.js"></script>
+  
+
+</head>
+
+<body>
+  <nav class="navbar"id="navbar" >
+    <a href="#" class="navbar-brand">s2img</a>
+    <input class="navbar-menu-target" type="checkbox" id="example-alignment" />
+    <label class="navbar-menu-toggle" for="example-alignment"><span class="navbar-icon"></span></label>
+    <ul class="navbar-menu-items menu-items-right">
+        <li>
+            <a href="#"><span>About</span></a>
+        </li>
+        <li>
+            <a href="#"><span>Github</span></a>
+        </li>
+        <li>
+            <a href="#"><span>Category</span></a>
+        </li>
+    </ul>
+  </nav>
+
+  <br>
+
+  <img id="logo" src="images/Logo.png" alt="">
+
+  <div id="inputContainter" class="container">
+    <form id= "songId" class="form-control">
+        
+      <input type="text" name="song" class="rounded" placeholder="Enter the song name" id="title" />
+        
+      <input type="text" name="creator" class="rounded" placeholder="Enter the artist's name" id="artist" />
+        
+      <input type="number" name="limit" class="rounded" placeholder="Enter a limit" id="limit" min="1"/>
+       
+      <button id="lyricSearch" class="rounded button">Search!</button>
+
+    </form>
+
+  <div class="lyricButton">
+
+    </div>
+
+    </div>
+    
+
+  <div class="generate">
+
+    <div class="generation">
+
+    </div>
+
+    <div class="images" id="images">  
+
+    </div>
+
+  </div>
+
+</body>
+</html> 
